@@ -5,7 +5,6 @@
    stackoverflow.com/questions/27006339/fan-prob-with-tostring-method-simple. 
     Additional modifications by Daniel W. 2024
 */
-
 package Module_2.SportsTeamApp;
 
 public class Team {
