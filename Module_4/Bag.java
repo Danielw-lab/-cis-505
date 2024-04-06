@@ -1,7 +1,6 @@
 public class Bag extends Product {
     private String type;
 
-    // No-argument constructor
     public Bag() {
         super();
         this.type = "";

@@ -1,13 +1,15 @@
+import java.util.LinkedList;
+
+// Product class
 public class Product {
     private String code;
     private String description;
     private double price;
 
-    // No-argument constructor
     public Product() {
         this.code = "";
         this.description = "";
-        this.price = 0.0;
+        this.price = 0;
     }
 
     // Accessor and mutator methods
@@ -38,6 +40,6 @@ public class Product {
     // Override toString() method
     @Override
     public String toString() {
-        return "Code: " + code + "\nDescription: " + description + "\nPrice: $" + String.format("%,6.2f", price);
+        return "Product code: " + code + "\nDescription: " + description + "\nPrice: $" + String.format("%,6.2f", price);
     }
 }

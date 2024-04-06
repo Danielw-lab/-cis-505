@@ -1,7 +1,6 @@
 public class Ball extends Product {
     private String color;
 
-    // No-argument constructor
     public Ball() {
         super();
         this.color = "";

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class TestBowlingShopApp {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    try (Scanner scanner = new Scanner(System.in)) {
         String choice;
         do {
             displayMenu();
@@ -17,12 +17,15 @@ public class TestBowlingShopApp {
             }
         } while (!choice.equals("x"));
     }
-
+    }
     public static void displayMenu() {
-        System.out.println("Menu:");
-        System.out.println("b - Get bowling balls");
-        System.out.println("s - Get bowling shoes");
-        System.out.println("a - Get bowling bags");
-        System.out.println("x - Exit");
+        System.out.println("MENU OPTIONS:");
+        System.out.println("   1. <b> - Get bowling balls");
+        System.out.println("   2. <s> - Get bowling shoes");
+        System.out.println("   3. <a> - Get bowling bags");
+        System.out.println("   4. <x> - To Exit\n");
+
+        System.out.print("Please choose an option: ");
+        // Code to read user input and process it
     }
 }

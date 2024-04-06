@@ -1,10 +1,9 @@
 public class Shoe extends Product {
     private double size;
 
-    // No-argument constructor
     public Shoe() {
         super();
-        this.size = 0.0;
+        this.size = 0;
     }
 
     // Accessor and mutator methods for size

@@ -1,17 +1,13 @@
 import java.util.LinkedList;
 
-public class GenericQueue<T> {
-    private LinkedList<T> list;
+public class GenericQueue<E> {
+    private LinkedList<E> list = new LinkedList<E>();
 
-    public GenericQueue() {
-        list = new LinkedList<>();
-    }
-
-    public void enqueue(T item) {
+    public void enqueue(E item) {
         list.addFirst(item);
     }
 
-    public T dequeue() {
+    public E dequeue() {
         return list.removeFirst();
     }
 
