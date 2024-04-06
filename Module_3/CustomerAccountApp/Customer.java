@@ -53,4 +53,3 @@ public class Customer {
         return "Name: " + name + "\nAddress: " + address + "\nCity: " + city + "\nZip: " + zip;
     }
 }
-
