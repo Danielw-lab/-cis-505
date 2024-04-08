@@ -1,3 +1,10 @@
+/*
+    Liang, Y.D. (2019). Introduction to Java Programming and Data Structures: 
+        Comprehensive Version (12th ed.). Pearson Education, Inc.
+   “Stackoverflow.Com.” Fan Prob with toString() Method -- Simple [Duplicate], Nov. 2016,
+   stackoverflow.com/questions/27006339/fan-prob-with-tostring-method-simple. 
+    Additional modifications by Daniel W. 2024
+*/
 import java.util.LinkedList;
 
 // Product class
@@ -7,9 +14,13 @@ public class Product {
     private double price;
 
     public Product() {
-        this.code = "";
-        this.description = "";
-        this.price = 0;
+        this("", "", 0.0);
+    }
+
+    public Product(String code, String description, double price) {
+        this.code = code;
+        this.description = description;
+        this.price = price;
     }
 
     // Accessor and mutator methods
